@@ -1,5 +1,5 @@
 function newPrice(currentPrice , discount ) { 
-    if (typeof currentPrice === "number" && typeof discount === "number") {
+    if (currentPrice === "number" && discount === "number") {
         let price = currentPrice-currentPrice*discount/100;
         return price.toFixed(3);
     }
