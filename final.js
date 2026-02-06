@@ -9,3 +9,9 @@ function newPrice(currentPrice , discount ) {
     }
 } 
  
+/*function signature/sample */ 
+function validOtp(otp) { 
+    let check = (typeof otp === "string")?(otp.length === 8 && otp.startsWith("ph-"))? true: false : "Invalid";
+    return check;
+}
+
